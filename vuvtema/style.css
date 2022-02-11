@@ -1,0 +1,149 @@
+/*
+Theme Name: VUV tema
+Author: VUV tim
+Description: VUV tema
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: VUV
+*/
+
+body
+{
+    background-color: #0C1520;
+    color: white;
+}
+
+@media (min-width: 1200px)
+{
+    .container {
+        max-width: 1450px;
+    }
+}
+
+.navbar 
+{
+    margin-top: 32px;
+    background-color: #808080 !important;
+    position: fixed !important;
+    top: 0 !important;
+}
+
+.navbar ul li a
+{
+    color: white;
+    font-weight: bold;
+}
+
+/*HOVER*/
+.navbar ul li a:hover {
+    text-decoration: none;
+}
+
+.menu-item > a:hover 
+{
+    color:rgba(255,255,255,.8);
+}
+
+.menu-item
+{
+    margin-right: 25px;
+}
+
+/*NAVBAR SA SUBMENU*/
+.sub-menu
+{
+    margin-top: 0px;
+    background-color: #808080 !important;
+}
+
+li 
+{
+    display: block;
+    transition-duration: 0.5s;
+}
+   
+li:hover 
+{
+    cursor: pointer;
+}
+   
+ul li ul 
+{
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+    transition: all 0.5s ease;
+    margin-top: 1rem;
+    display: none;
+}
+   
+ul li:hover > ul,
+ul li ul:hover 
+{
+    visibility: visible;
+    opacity: 1;
+    display: block;
+}
+   
+ul li ul li 
+{
+    clear: both;
+    width: 100%;
+}
+
+/*SIDEBAR NA NASLOVNICI*/
+.widget-content > ul > li > a
+{
+    color: white;
+    font-weight: bold;
+}
+
+.widget-content > ul > li > a 
+{
+    text-decoration: none;
+}
+
+.widget-content > ul > li > a:hover
+{
+    color:rgba(255,255,255,.8);
+}
+
+.widget-content > ul > li
+{
+    background-color:#808080;
+    margin-bottom: 10px;
+    color: white;
+}
+
+.widget-content > ul > li > a
+{
+    padding: 15px 15px 15px 15px;
+}
+
+/*HREFS*/
+a
+{
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+a:hover
+{
+    color:rgba(255,255,255,.8);
+    text-decoration: none !important;
+}
+
+/*OBJAVE*/
+.dvObavijesti
+{
+    background-color:#808080;
+    margin-bottom: 10px;
+    color: white;
+}
+
+.dvObavijesti h4
+{
+    padding: 15px 15px 15px 15px;
+}
